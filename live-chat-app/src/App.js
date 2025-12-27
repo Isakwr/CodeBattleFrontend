@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
   const connection = new signalR.HubConnectionBuilder()
-    .withUrl("https://localhost:7011/chatHub")
+    .withUrl("https://codeversus-test2.onrender.com/chathub")
     .withAutomaticReconnect()
     .build();
 

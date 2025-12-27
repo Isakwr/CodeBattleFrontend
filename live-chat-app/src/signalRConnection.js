@@ -2,7 +2,8 @@ import * as signalR from "@microsoft/signalr"
 
 
 const connection = new signalR.HubConnectionBuilder()
-    .withUrl("https://localhost:5000")
+    .withUrl("http://codeversus-test2.onrender.com:5000/chathub")
+    .withAutomaticReconnect()
     .build();
 
 
